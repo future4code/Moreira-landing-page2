@@ -1,0 +1,173 @@
+/*Configurações da Página------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Imagens/background.jpg");
+    background-size: cover;}
+
+body::-webkit-scrollbar {
+    width: 6px;}
+      
+body::-webkit-scrollbar-track {
+    background-color: rgba(53, 39, 39, 0.795)}
+      
+body::-webkit-scrollbar-thumb {
+    background-color: goldenrod;       
+    border: 1px solid goldenrod;}
+
+/*Cabeçalho------------------------------------------------------------------------------------------------------*/
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: #ca1738;
+    padding: 0px 30px;}
+
+#logomarca{
+    height: 80px;}
+
+.cabecalho p{
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    color: snow;
+    font-size: 14px;
+    cursor: pointer;}
+
+.cabecalho p:hover{
+    font-size: 15px;
+    text-decoration: underline;}
+
+#botao-cadastrar{
+    border-radius: 20px;
+    padding: 13px;
+    text-transform: uppercase;
+    border: 1px solid snow;
+    background-color: snow;
+    color: #ca1738;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;}
+
+#botao-cadastrar:hover{
+    font-size: 1em;
+    background-color: goldenrod;
+    color: snow;
+    transition: all 0.5s ease-in-out;}  
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 0;
+    background-color: #ca1738;
+    transition: all 0.6s ease-in-out;}
+    
+.navegacao:hover{
+    background-color: rgba(53, 39, 39, 0.795);}
+                     
+.navegacao a{                
+    padding: 15px 0;
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-size: 100%;
+    font-weight: 200;
+    border-top: 1px solid snow;
+    color: white;
+    text-decoration: none;}                    
+
+.navegacao a:hover{
+    background-color: goldenrod;
+    padding-bottom: 2px;
+    border-bottom: 2px solid goldenrod;}
+
+@media (max-width: 600px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+    .botao-cadastrar{
+        padding: 8px;
+        font-size: 10px;
+    }
+    .navegacao a{
+        font-size: 8px;}}
+
+
+/*Seções------------------------------------------------------------------------------------------------------*/
+
+section:nth-of-type(1){
+    width: 100vw;
+    height: 100vh;}
+
+section:nth-of-type(2){
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Imagens/background-sobre.jpg");
+    background-size: cover;}
+
+section:nth-of-type(3){
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Imagens/background-noticias.jpg");
+    background-size: cover;}
+
+
+
+
+/*Seção Sobre------------------------------------------------------------------------------------------------------*/
+
+#sobre-nos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;}
+
+
+
+
+/*Footer------------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #ca1738;
+    border-top: 1px solid snow;
+    padding: 0px 25px;
+    width: 100vw;}
+
+footer p{
+    font-family: 'Sarala', sans-serif;
+    color: snow;
+    font-size: 13px;}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Sarala', sans-serif;
+    color: snow;
+    margin: 10px;
+    font-size: 13px;}
+
